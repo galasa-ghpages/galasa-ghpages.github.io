@@ -4,8 +4,8 @@ const crypto = require(`crypto`)
 const digitalData = require("./src/utils/digital-data")
 
 const consts = {
-  githubRepoName: "galasa.dev",
-  githubOrgName: "galasa-dev",
+  githubRepoName: "galasa-ghpages",
+  githubOrgName: "jt-nti",
   twitterUrl: "",
   slackUrl: "https://openmainframeproject.slack.com/signup#/domain-signup",
   algolia: {
@@ -46,10 +46,11 @@ const eslintOptions = process.env.CI === `true` ? {
 } : {};
 
 module.exports = {
+  pathPrefix: "/galasa-ghpages",
   siteMetadata: {
     title: `galasa`,
     description: `Galasa is an open source deep integration test framework for teams looking to give more power to their testers.`,
-    siteUrl: `https://galasa.dev`,
+    siteUrl: `https://jt-nti.github.io/galasa-ghpages`,
     consts,
   },
   plugins: [
